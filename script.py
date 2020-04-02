@@ -12,4 +12,5 @@ for sentence in word_tokenized_text:
 
 np_chunk_grammar = "NP: {<DT>?<JJ>*<NN>}"
 
+np_chunk_parser = RegexpParser(np_chunk_grammar)
 
