@@ -10,4 +10,5 @@ def word_sentence_tokenize(text):
 
   for sentence in sentence_tokenized:
     word_tokenized.append(word_tokenize(sentence))
-    return word_tokenized
+  
+  return word_tokenized
