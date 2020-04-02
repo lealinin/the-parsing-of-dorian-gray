@@ -1,5 +1,7 @@
 from nltk import pos_tag, RegexpParser
 from tokenize_words import word_sentence_tokenize # non-library functions
+from np_chunk_counter import np_chunk_counter
+from vp_chunk_counter import vp_chunk_counter
 
 text = open("dorian_gray.txt", encoding='utf-8').read().lower()
 
@@ -24,6 +26,14 @@ vp_chunked_text = list()
 for sentence in pos_tagged_text:
   np_chunked_text.append(np_chunk_parser.parse(sentence))
   vp_chunked_text.append(vp_chunk_parser.parse(sentence))
+
+most_common_np_chunks = np_chunk_counter(np_chunked_text)
+# print(most_common_np_chunks)
+
+most_common_vp_chunks = vp_chunk_counter(vp_chunked_text)
+print(most_common_vp_chunks)
+
+
 
 
 
