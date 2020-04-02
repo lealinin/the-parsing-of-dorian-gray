@@ -21,5 +21,9 @@ vp_chunk_parser = RegexpParser(vp_chunk_grammar)
 np_chunked_text = list()
 vp_chunked_text = list()
 
+for sentence in pos_tagged_text:
+  np_chunked_text.append(np_chunk_parser.parse(sentence))
+  vp_chunked_text.append(vp_chunk_parser.parse(sentence))
+
 
 
