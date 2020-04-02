@@ -11,3 +11,5 @@ def np_chunk_counter(chunked_sentences):
 
   for chunk in chunks:
     chunk_counter[chunk] += 1
+
+  return chunk_counter.most_common(30)
