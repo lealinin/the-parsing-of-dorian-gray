@@ -10,8 +10,6 @@ pos_tagged_text = list()
 for sentence in word_tokenized_text:
   pos_tagged_text.append(pos_tag(sentence))
 
-# single_pos_sentence = pos_tagged_text[50]
-# print(single_pos_sentence)
-
+np_chunk_grammar = "NP: {<DT>?<JJ>*<NN>}"
 
 
