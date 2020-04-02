@@ -16,5 +16,5 @@ np_chunk_parser = RegexpParser(np_chunk_grammar)
 
 vp_chunk_grammar = "VP: {<DT>?<JJ>*<NN><VB.*><RB.?>?}"
 
-
+vp_chunk_parser = RegexpParser(vp_chunk_grammar)
 
